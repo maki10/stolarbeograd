@@ -14,6 +14,7 @@
     <link href="{{ elixir('css/public.css') }}" rel="stylesheet">
 
     <style>
+    @yield('style')
         body {
             font-family: 'Lato';
         }
@@ -25,7 +26,7 @@
 </head>
 <body id="app-layout">
     <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
 
                 <!-- Collapsed Hamburger -->

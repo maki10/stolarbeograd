@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers\Design;
 
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
 class DesignController extends Controller
 {

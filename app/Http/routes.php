@@ -11,11 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::auth();
+
+//ADMIN
+Route::group(['prefix' => 'administration', 'namespace' =>'Admin'], function () {
+
+    // actions w/o credentials
+    Route::get('login', 'AdminController@getLogin');
+    Route::post('login', 'AdminController@postLogin');
+
+    // actions with credentials
+	Route::group(['middleware' => ['admin']], function() {
+		Route::controller('wall', 'WallController');
+		Route::controller('', 'AdminController');
+
+	});
+
+});
 
 Route::group(['middleware' => 'auth'], function () {
 
@@ -26,6 +38,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 	});
 
-	Route::controller('project', 'ProjectController');
-
 });
+
+//Index controller
+Route::controller('', 'IndexController');
