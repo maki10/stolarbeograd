@@ -1,0 +1,1 @@
+{"version":3,"sources":["admin.less","admin.css"],"names":[],"mappings":"AAAA;EACC,kBAAA;CCCA","file":"admin.css","sourcesContent":[".margin10 {\n\tmargin-top: -50px;\n}",".margin10 {\n  margin-top: -50px;\n}\n"],"sourceRoot":"/source/"}

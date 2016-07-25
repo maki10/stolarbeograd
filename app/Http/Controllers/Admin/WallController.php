@@ -11,4 +11,9 @@ class WallController extends Controller
 	{
 		return view('admin.wall.index');
 	}
+
+	public function getCreate()
+	{
+		return view('admin.wall.create');
+	}
 }

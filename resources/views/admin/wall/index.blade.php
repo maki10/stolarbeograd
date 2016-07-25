@@ -28,8 +28,10 @@
 @section('content')
 <div class="container-fluid">
     <div class="row">
-        <h1>Wall panel</h1>
-
+        <div class="col-sm-10 padding20">
+	        <h1>Wall panel</h1>
+	        <a href="wall/create"><button class="btn btn-warning pull-right margintop-40">Create wall</button></a>
+        </div>
         <div class="col-sm-6">
             <div class="col-sm-12 thumbnail text-center">
                 <img alt="" class="img-responsive" src=
