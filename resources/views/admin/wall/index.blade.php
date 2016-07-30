@@ -32,16 +32,18 @@
 	        <h1>Wall panel</h1>
 	        <a href="wall/create"><button class="btn btn-warning pull-right margintop-40">Create wall</button></a>
         </div>
-        <div class="col-sm-6">
-            <div class="col-sm-12 thumbnail text-center">
-                <img alt="" class="img-responsive" src=
-                "/images/admin_wall.jpg">
 
-                <div class="caption">
-                    <h4><a href="wall">View walls</a></h4>
+        @foreach ($walls as $wall)
+            <div class="col-sm-6">
+                <div class="col-sm-12 thumbnail text-center">
+                    <img alt="" class="img-responsive" src="../{{ $wall->source }}">
+
+                    <div class="caption">
+                        <h4><a href="administration/wall/{{ $wall->id }}">{{ $wall->title }}</a></h4>
+                    </div>
                 </div>
-            </div>
-        </div>	            
+            </div>              
+        @endforeach
 
     </div>
 </div>

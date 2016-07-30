@@ -34,11 +34,10 @@
                 <h4 class="text-center">What you wan't to do now?</h4>
 	            <div class="col-sm-6">
 	                <div class="col-sm-12 thumbnail text-center">
-	                    <img alt="" class="img-responsive" src=
-	                    "/images/admin_wall.jpg">
+	                    <img alt="" class="img-responsive" src="/images/admin_wall.jpg">
 
 	                    <div class="caption">
-	                        <h4><a href="wall">View walls</a></h4>
+	                        <h4><a href="administration/wall">View walls</a></h4>
 	                    </div>
 	                </div>
 	            </div>	            
